@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# Husky pre-commit hook
+# This runs automatically before every git commit
+
+echo "Running pre-commit checks..."
+
+# Run lint-staged (formats and lints only staged files)
+npx lint-staged
+
+echo "Pre-commit checks passed!"
